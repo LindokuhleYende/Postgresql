@@ -1,0 +1,1 @@
+SELECT DISTINCT school FROM teachers
