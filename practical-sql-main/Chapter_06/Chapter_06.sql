@@ -21,6 +21,10 @@ CREATE TABLE employees (
     last_name varchar(100),
     salary integer,
     dept_id integer REFERENCES departments (dept_id),
+    -- FOREIGN KEY (dept_id) REFERENCES departments (dept_id),
+    -- This is an alternative syntax for the foreign key constraint
+    --CONSTRAINT emp_id_key PRIMARY KEY (emp_id),
+    -- This is an alternative syntax for the primary key constraint
     CONSTRAINT emp_key PRIMARY KEY (emp_id),
     CONSTRAINT emp_dept_unique UNIQUE (emp_id, dept_id)
 );
