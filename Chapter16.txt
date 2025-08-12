@@ -1,0 +1,33 @@
+Chapter16
+
+CREATE TABLE students(
+student_id SERIAL PRIMARY KEY,
+ first_name varchar(50),
+ last_name varchar(50),
+ module_id INT REFERENCES module(module_id)
+);
+
+CREATE TABLE module(
+module_id SERIAL PRIMARY KEY,
+module_name varchar(100),
+);
+
+INSERT INTO students(first_name, last_name, module_id)
+VALUES ('Cadee', 'Rousseau', 4),
+                 ('Ethan', 'Hurwitz',  3),
+		('Lindokuhle' ,'Yende',4 ),
+		('Pierre' ,'Kahundahunda	', 1),
+                ('Marvelous', 'Kahundahunda', 5);
+
+
+
+
+INSERT INTO module(module_name)
+VALUES('Python'),
+                ('HTMX'),
+		('Node'),
+                ('React.js'),
+                ('MERN STACK');
+
+SELECT * FROM students JOIN module
+ON students.module_id = module.module_id ;
