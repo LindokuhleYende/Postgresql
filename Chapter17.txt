@@ -1,0 +1,30 @@
+Chapter17
+
+CREATE TABLE vacuum_test (
+postgres(#     integer_column integer
+postgres(# );
+CREATE TABLE
+postgres=# SELECT pg_size_pretty(
+postgres(#            pg_total_relation_size('vacuum_test')
+postgres(#        );
+ pg_size_pretty
+----------------
+ 0 bytes
+(1 row)
+
+
+postgres=# SELECT pg_size_pretty(
+postgres(#            pg_database_size('analysis')
+postgres(#        );
+ pg_size_pretty
+----------------
+ 8091 kB
+(1 row)
+
+
+postgres=# SELECT pg_size_pretty(
+postgres(# pg_database_size('postgres'));
+ pg_size_pretty
+----------------
+ 191 MB
+(1 row)
