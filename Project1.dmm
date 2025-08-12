@@ -1,0 +1,922 @@
+{
+	"tables": {
+		"9065de9a-a827-4aa5-a005-085f7b92afd6": {
+			"id": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+			"visible": true,
+			"name": "employees",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "1da169ea-6025-4156-9ec3-07e436ff48ac",
+					"name": "emp_id",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "65b0ae0e-4dc4-4e7c-91a2-bdc10b7aff3a",
+					"name": "first_name",
+					"datatype": "varchar",
+					"param": "50",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "bb8f78fa-d5a8-43df-9a64-39fc72a6ead1",
+					"name": "last_name",
+					"datatype": "varchar",
+					"param": "50",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "54f0c9a6-db1d-42b3-9ad0-e8895c051526",
+					"name": "gender",
+					"datatype": "varchar",
+					"param": "50",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "6758aa85-28b2-4c8d-8d9e-580fdd9a4889",
+					"name": "address",
+					"datatype": "varchar",
+					"param": "100",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "29d79c6f-9a92-441b-800d-310a48954b69",
+					"name": "email",
+					"datatype": "varchar",
+					"param": "100",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "f88c355e-255b-4724-badf-b289e2ae1519",
+					"name": "overtime_id",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7f2c798d-a7a1-4931-9b29-4710daa2da1d",
+					"name": "Department_id",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7ff24feb-a9b4-44bb-a1ac-cbe09c76a767",
+					"name": "Salary_id",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "804c1fed-31c3-4056-a025-5eca0facb4ae",
+					"name": "Roles_id",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"34b39685-9e38-4e2d-aae7-2ed5a4f3dce3",
+				"c0c5cec9-81a6-43e3-ae1d-57d29887df88",
+				"2fa36ffd-a0ef-4470-bcf9-5beaec35aae3",
+				"ce75f66d-7238-4ed8-a05e-3ecff7588da5"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "3f5f76f7-eb53-4373-9340-80d8ee142a6c",
+					"name": "employees_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "b3bc53d1-e3e3-49df-899e-cd524ddd6d9e",
+							"colid": "1da169ea-6025-4156-9ec3-07e436ff48ac"
+						}
+					]
+				},
+				{
+					"id": "92960374-8833-4fe9-a128-456286b85d26",
+					"isPk": false,
+					"name": "employees_key",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"702c4239-64ca-4044-9e73-070c3c20fbd5": {
+			"id": "702c4239-64ca-4044-9e73-070c3c20fbd5",
+			"visible": true,
+			"name": "Department",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "83cc6e69-5d64-457f-a765-906501624fc8",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "e147ef0f-d9d3-4621-956b-64788a25be8f",
+					"name": "dept_name",
+					"datatype": "varchar",
+					"param": "100",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "3e5281ee-5a9e-4799-9ca7-4673b5197487",
+					"name": "dept_city",
+					"datatype": "varchar",
+					"param": "100",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"34b39685-9e38-4e2d-aae7-2ed5a4f3dce3"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "4cd469d8-cf80-483d-8782-d055751a8397",
+					"name": "Department_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "a248dbd6-5946-4a3b-a463-f2cd78e4bedf",
+							"colid": "83cc6e69-5d64-457f-a765-906501624fc8"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"5443ab5d-8714-4166-a8a6-60baa95acb52": {
+			"id": "5443ab5d-8714-4166-a8a6-60baa95acb52",
+			"visible": true,
+			"name": "Roles",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "e83ba86a-bb4b-475f-91a2-413d893720af",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ded7fd55-1868-4ef6-a400-9f184859ad94",
+					"name": "Role",
+					"datatype": "varchar",
+					"param": "100",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"2fa36ffd-a0ef-4470-bcf9-5beaec35aae3"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "5472df66-e503-4856-a3e3-16143f365a85",
+					"name": "Roles_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "d2d770f9-ffa4-4fd5-b7ec-81504731c37d",
+							"colid": "e83ba86a-bb4b-475f-91a2-413d893720af"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"b57238cf-848d-4838-9777-7b2735155f82": {
+			"id": "b57238cf-848d-4838-9777-7b2735155f82",
+			"visible": true,
+			"name": "Salary",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "123c48a5-a9b2-4f9e-97e4-ac764beda470",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "18a63838-17ea-42d5-8bdf-68ac5bedf1b4",
+					"name": "salary_pa",
+					"datatype": "money",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"c0c5cec9-81a6-43e3-ae1d-57d29887df88"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "5165e375-3856-4349-914b-2ee809022ab5",
+					"name": "Salary_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "4bdac1d0-e2d0-4fc6-b69a-c8be295c6909",
+							"colid": "123c48a5-a9b2-4f9e-97e4-ac764beda470"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"3a8bdc24-5904-4eae-bf2a-b9510475477f": {
+			"id": "3a8bdc24-5904-4eae-bf2a-b9510475477f",
+			"visible": true,
+			"name": "Overtime_Hours",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "ac37c02d-4f56-412f-be28-35b85306fec6",
+					"name": "id",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "193c83e5-e985-4374-9a45-9f28bfa32734",
+					"name": "overtime_hours",
+					"datatype": "time",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"pg": {
+						"generatedIdentity": "no",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"ce75f66d-7238-4ed8-a05e-3ecff7588da5"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "99c0c0a3-1b37-4c1b-aff7-ccc8b9521f3b",
+					"name": "Overtime_Hours_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "eb989c83-a887-42bb-b203-dad47c36c54e",
+							"colid": "ac37c02d-4f56-412f-be28-35b85306fec6"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		}
+	},
+	"relations": {
+		"34b39685-9e38-4e2d-aae7-2ed5a4f3dce3": {
+			"id": "34b39685-9e38-4e2d-aae7-2ed5a4f3dce3",
+			"name": "employees_Department_id_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "4cd469d8-cf80-483d-8782-d055751a8397",
+			"parent": "702c4239-64ca-4044-9e73-070c3c20fbd5",
+			"child": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "e87c5ba4-14a8-4647-aa66-c7fb61963347",
+					"parentcol": "83cc6e69-5d64-457f-a765-906501624fc8",
+					"childcol": "7f2c798d-a7a1-4931-9b29-4710daa2da1d"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"c0c5cec9-81a6-43e3-ae1d-57d29887df88": {
+			"id": "c0c5cec9-81a6-43e3-ae1d-57d29887df88",
+			"name": "employees_Salary_id_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "5165e375-3856-4349-914b-2ee809022ab5",
+			"parent": "b57238cf-848d-4838-9777-7b2735155f82",
+			"child": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "97e306a9-0cb0-4053-bb95-827c8644a1cc",
+					"parentcol": "123c48a5-a9b2-4f9e-97e4-ac764beda470",
+					"childcol": "7ff24feb-a9b4-44bb-a1ac-cbe09c76a767"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"2fa36ffd-a0ef-4470-bcf9-5beaec35aae3": {
+			"id": "2fa36ffd-a0ef-4470-bcf9-5beaec35aae3",
+			"name": "employees_Roles_id_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "5472df66-e503-4856-a3e3-16143f365a85",
+			"parent": "5443ab5d-8714-4166-a8a6-60baa95acb52",
+			"child": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "d192c540-a92f-41e8-aae3-9c50e3572988",
+					"parentcol": "e83ba86a-bb4b-475f-91a2-413d893720af",
+					"childcol": "804c1fed-31c3-4056-a025-5eca0facb4ae"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		},
+		"ce75f66d-7238-4ed8-a05e-3ecff7588da5": {
+			"id": "ce75f66d-7238-4ed8-a05e-3ecff7588da5",
+			"name": "employees_overtime_id_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "99c0c0a3-1b37-4c1b-aff7-ccc8b9521f3b",
+			"parent": "3a8bdc24-5904-4eae-bf2a-b9510475477f",
+			"child": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "f8202785-3b41-4fb0-a30d-fe1b426dc6bb",
+					"parentcol": "ac37c02d-4f56-412f-be28-35b85306fec6",
+					"childcol": "f88c355e-255b-4724-badf-b289e2ae1519"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent",
+			"linegraphics": "default"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "Project1",
+		"id": "3112fbb3-cb63-4335-8cf6-09c54b0c2217",
+		"activeDiagram": "a07f82fb-4b87-4f81-9d30-c5965919e4c9",
+		"desc": "Creating 5 tables with relationships",
+		"path": "",
+		"type": "PG",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 11,
+			"minor": 0,
+			"extra": 0
+		},
+		"laststoredin": {
+			"major": 11,
+			"minor": 0,
+			"extra": 0
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_coltopk": true,
+		"pg": {
+			"schema": ""
+		},
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"quotationExistance": "if_needed",
+			"includeSchema": "always",
+			"includeGeneratedNames": "always"
+		},
+		"nameAutoGeneration": {
+			"keys": true,
+			"indexes": true,
+			"relations": true
+		},
+		"connectionVersion": "",
+		"synchronizationSettings": {
+			"preserveData": "use_temporary_tables",
+			"ignoreSystemDefaults": "yes",
+			"includeWarnings": "yes",
+			"includeCreationSql": "no"
+		},
+		"modelScriptFilePath": "C:\\Users\\Lindokuhle Yende\\OneDrive\\Desktop\\CodeCollege\\Postgresql\\Project1.sql",
+		"lastSaved": 1754950105164
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"a07f82fb-4b87-4f81-9d30-c5965919e4c9": {
+			"name": "",
+			"description": "",
+			"id": "a07f82fb-4b87-4f81-9d30-c5965919e4c9",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"9065de9a-a827-4aa5-a005-085f7b92afd6": {
+					"referencedItemId": "9065de9a-a827-4aa5-a005-085f7b92afd6",
+					"x": 371,
+					"y": 148,
+					"gHeight": 207,
+					"gWidth": 215,
+					"color": "#ffffff",
+					"background": "#cddc39",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"702c4239-64ca-4044-9e73-070c3c20fbd5": {
+					"referencedItemId": "702c4239-64ca-4044-9e73-070c3c20fbd5",
+					"x": 72,
+					"y": 92,
+					"gHeight": 91,
+					"gWidth": 222,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"5443ab5d-8714-4166-a8a6-60baa95acb52": {
+					"referencedItemId": "5443ab5d-8714-4166-a8a6-60baa95acb52",
+					"x": 100,
+					"y": 416,
+					"gHeight": 63,
+					"gWidth": 184,
+					"color": "#8bc34a",
+					"background": "#f44336",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"b57238cf-848d-4838-9777-7b2735155f82": {
+					"referencedItemId": "b57238cf-848d-4838-9777-7b2735155f82",
+					"x": 686,
+					"y": 86,
+					"gHeight": 83,
+					"gWidth": 197,
+					"color": "#cddc39",
+					"background": "#9c27b0",
+					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"3a8bdc24-5904-4eae-bf2a-b9510475477f": {
+					"referencedItemId": "3a8bdc24-5904-4eae-bf2a-b9510475477f",
+					"x": 638,
+					"y": 363,
+					"gHeight": 63,
+					"gWidth": 206,
+					"color": "#ff0000",
+					"background": "#ffffff",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showHorizontal": true,
+			"showDescriptions": true,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"showIndicatorCaptions": true,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"embeddedSpacing": "2",
+			"showMainIcon": true,
+			"showLabels": true,
+			"showCustomizations": false,
+			"showExportDimensions": false,
+			"showCompleted": true
+		}
+	},
+	"diagramsOrder": [],
+	"order": [
+		"9065de9a-a827-4aa5-a005-085f7b92afd6",
+		"702c4239-64ca-4044-9e73-070c3c20fbd5",
+		"5443ab5d-8714-4166-a8a6-60baa95acb52",
+		"b57238cf-848d-4838-9777-7b2735155f82",
+		"3a8bdc24-5904-4eae-bf2a-b9510475477f",
+		"34b39685-9e38-4e2d-aae7-2ed5a4f3dce3",
+		"c0c5cec9-81a6-43e3-ae1d-57d29887df88",
+		"2fa36ffd-a0ef-4470-bcf9-5beaec35aae3",
+		"ce75f66d-7238-4ed8-a05e-3ecff7588da5"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
